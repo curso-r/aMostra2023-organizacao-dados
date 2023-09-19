@@ -1,5 +1,19 @@
+# https://beamilz.com/posts/2021-03-29-desvendando-erros/pt/
+
+
 # IMPORTAÇÃO
 # importar vários arquivos ------------------------------------------------
+library(dplyr)
+
+
+# Usando import dataset: lembrar de copiar o código!
+# library(readxl)
+# dados_exemplo <- read_excel("dados-brutos/RelatorioQualidadeAguasSuperficiais_clorofila-a_2008-2012.xlsx")
+# View(dados_exemplo)
+
+# dica: use aspas e tab
+# "dados-brutos/RelatorioQualidadeAguasSuperficiais_PT_2018-2022.xlsx"
+
 
 # importando um arquivo
 infoaguas_exemplo <- readxl::read_xlsx("dados-brutos/RelatorioQualidadeAguasSuperficiais_clorofila-a_2008-2012.xlsx")
@@ -8,6 +22,10 @@ infoaguas_exemplo <- readxl::read_xlsx("dados-brutos/RelatorioQualidadeAguasSupe
 dplyr::glimpse(infoaguas_exemplo)
 
 # descobrindo o caminho de todos os arquivos
+
+fs::dir_ls("dados-brutos/")
+
+
 arquivos <- fs::dir_ls("dados-brutos/", glob = "*.xlsx")
 
 
