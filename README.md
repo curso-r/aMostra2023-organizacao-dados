@@ -9,9 +9,6 @@
 
 - **Slides:** <https://curso-r.github.io/aMostra2023-organizacao-dados>
 
-- **Prática editada durante o minicurso:**
-  <https://github.com/curso-r/aMostra2023-organizacao-dados/blob/main/pratica-editada.R>
-
 - **Prática original:**
   <https://github.com/curso-r/aMostra2023-organizacao-dados/blob/main/pratica.R>
 
