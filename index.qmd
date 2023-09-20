@@ -83,6 +83,20 @@ Dica: Você pode criar uma conta vinculada ao Gmail ou GitHub.
 
 -   Falaremos sobre boas práticas também!
 
+## Motivação
+
+
+
+![](images/meme-datasets.jpg){fig-align="center"}
+
+## Motivação [pt. 2]
+
+
+
+![](images/meme-project.jpg){fig-align="center"}
+
+
+
 ## tidyverse
 
 ```{r}
