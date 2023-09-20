@@ -14,7 +14,7 @@
 
 ## Links úteis:
 
-- <https://rstudio.cloud/>
+- <https://posit.cloud/content/6584117>
 
 - <https://beamilz.com/posts/2021-03-29-desvendando-erros/pt/>
 

@@ -1,3 +1,8 @@
+# Verificar sua versão do R:
+# Deve ser >= 4.1.0
+R.version$version.string
+
+
 # https://beamilz.com/posts/2021-03-29-desvendando-erros/pt/
 
 
@@ -195,7 +200,7 @@ infoaguas_iet <- infoaguas_wide |>
 
 
 
-# broom
+# broom ------------
 
 resultado_modelo <- lm(formula = fosforo_total ~ clorofila_a,
                        data = infoaguas_wide) |>

@@ -71,7 +71,7 @@ source("utils.R")
 
 Caso não tenha, crie uma conta no serviço:
 
--   RStudio Cloud: <https://rstudio.cloud/>
+-   Posit Cloud: <https://posit.cloud/content/6584117>
 
 Dica: Você pode criar uma conta vinculada ao Gmail ou GitHub.
 
@@ -90,6 +90,15 @@ Dica: Você pode criar uma conta vinculada ao Gmail ou GitHub.
 #| echo: false
 adicionar_arte_horst("tidyverse_celestial")
 ```
+
+
+## Ciclo da ciência de dados
+
+![](images/ciclo-ciencia-de-dados.png){fig-align="center"}
+
+::: footer
+Fonte: Ciclo da Ciência de Dados traduzido pela Curso-R. A versão original está disponível no livro R for Data Science.
+:::
 
 # Sobre esse tutorial....
 
