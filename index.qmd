@@ -22,13 +22,13 @@ knitr:
     echo: true
 ---
 
-## Beatriz Milz  {.center .aboutmeslide}
+## Beatriz Milz {.center .aboutmeslide}
 
 ::: columns
 ::: {.column width="60%"}
 -   Contato
 
-    -   Email: milz.bea@gmail.com
+    -   Email: milz.bea\@gmail.com
 
     -   Blog: [beamilz.com](https://beamilz.com)
 
@@ -37,12 +37,12 @@ knitr:
     -   Co-organizadora: R-Ladies São Paulo / Latin-R / satRday São Paulo
 
     -   Professora na [Curso-R](https://curso-r.com/)
-    
-    -   Professora no Programa de Verão IME/USP 
+
+    -   Professora no Programa de Verão IME/USP
 
     -   Instrutora de Tidyverse certificada pela RStudio
-    
-    - Organizando a tradução do livro R4DS: <https://cienciadedatos.github.io/pt-r4ds/>
+
+    -   Organizando a tradução do livro R4DS: <https://cienciadedatos.github.io/pt-r4ds/>
 :::
 
 ::: {.column width="40%"}
@@ -50,13 +50,11 @@ knitr:
 :::
 :::
 
-
-## Tereza Lacerda  {.center .aboutmeslide}
+## Tereza Lacerda {.center .aboutmeslide}
 
 ::: columns
 ::: {.column width="60%"}
 ...
-
 :::
 
 ::: {.column width="40%"}
@@ -64,13 +62,10 @@ knitr:
 :::
 :::
 
-
 ```{r}
 #| echo: false
 source("utils.R")
 ```
-
-
 
 ## Tarefas iniciais
 
@@ -80,7 +75,7 @@ Caso não tenha, crie uma conta no serviço:
 
 Dica: Você pode criar uma conta vinculada ao Gmail ou GitHub.
 
-## Objetivos de aprendizagem
+## Público alvo
 
 -   O minicurso é destinado a pessoas que já tem um conhecimento básico sobre tidyverse e dplyr (como selecionar colunas, filtrar linhas, ordenar linhas, agrupar e sumarizar) e querem aprender mais.
 
@@ -96,8 +91,6 @@ Dica: Você pode criar uma conta vinculada ao Gmail ou GitHub.
 adicionar_arte_horst("tidyverse_celestial")
 ```
 
-
-
 # Sobre esse tutorial....
 
 ## Faremos muita prática!
@@ -108,7 +101,6 @@ adicionar_arte_horst("tidyverse_celestial")
 Arte por [Allison Horst](https://mobile.twitter.com/allison_horst)
 :::
 
-
 ## Tem novidades surgindo com frequência!
 
 ![](images/something-new.jpg){fig-align="center"}
@@ -116,7 +108,6 @@ Arte por [Allison Horst](https://mobile.twitter.com/allison_horst)
 ::: footer
 Arte por [Allison Horst](https://mobile.twitter.com/allison_horst)
 :::
-
 
 ## Reprodutibilidade
 
@@ -126,7 +117,6 @@ Arte por [Allison Horst](https://mobile.twitter.com/allison_horst)
 adicionar_arte_horst("reproducibility_court")
 ```
 
-
 ## Vamos usar um projeto do RStudio
 
 ```{r}
@@ -135,6 +125,14 @@ adicionar_arte_horst("reproducibility_court")
 adicionar_arte_horst("cracked_setwd")
 ```
 
+## Configurações do RStudio
+
+[![](https://curso-r.github.io/zen-do-r/static/rdata-rhistory/config.png){fig-align="center"}](https://curso-r.github.io/zen-do-r/static/rdata-rhistory/config.png)
+
+
+::: footer
+Fonte: [Zen do R](https://curso-r.github.io/zen-do-r/rdata-rhistory.html)
+:::
 
 ## Dicas gerais
 
@@ -152,24 +150,19 @@ adicionar_arte_horst("cracked_setwd")
 
 ## Conceito importante: tidy data
 
-
 ```{r}
 #| results: 'asis'
 #| echo: false
 adicionar_arte_horst("tidydata_1", ext = ".jpg", legenda_complementar = "Illustrations from the [Openscapes](https://www.openscapes.org/) blog [*Tidy Data for reproducibility, efficiency, and collaboration*](https://www.openscapes.org/blog/2020/10/12/tidy-data/) by Julia Lowndes and Allison Horst.")
 ```
 
-
 ## Conceito importante: tidy data
-
 
 ```{r}
 #| results: 'asis'
 #| echo: false
 adicionar_arte_horst("tidydata_2", ext = ".jpg", legenda_complementar = "Illustrations from the [Openscapes](https://www.openscapes.org/) blog [*Tidy Data for reproducibility, efficiency, and collaboration*](https://www.openscapes.org/blog/2020/10/12/tidy-data/) by Julia Lowndes and Allison Horst.")
 ```
-
-
 
 ## Conceito importante: tidy data
 
@@ -179,9 +172,7 @@ adicionar_arte_horst("tidydata_2", ext = ".jpg", legenda_complementar = "Illustr
 adicionar_arte_horst("tidydata_3", ext = ".jpg", legenda_complementar = "Illustrations from the [Openscapes](https://www.openscapes.org/) blog [*Tidy Data for reproducibility, efficiency, and collaboration*](https://www.openscapes.org/blog/2020/10/12/tidy-data/) by Julia Lowndes and Allison Horst.")
 ```
 
-
 ## Conceito importante: tidy data
-
 
 ```{r}
 #| results: 'asis'
@@ -195,8 +186,7 @@ adicionar_arte_horst("tidydata_7", ext = ".jpg", legenda_complementar = "Illustr
 
 -   Dados de qualidade de águas superficiais no Estado de SP.
 
-- 2008 à 2022, Fósforo total e clorofila-*a*, pontos na Represa Billings.
-
+-   2008 à 2022, Fósforo total e clorofila-*a*, pontos na Represa Billings.
 
 # Importar os dados
 
@@ -210,9 +200,8 @@ adicionar_arte_horst("tidydata_7", ext = ".jpg", legenda_complementar = "Illustr
 infoaguas_exemplo <- readxl::read_xlsx("dados-brutos/RelatorioQualidadeAguasSuperficiais_clorofila-a_2008-2012.xlsx")
 
 ```
- 
- - Importar muitos arquivos: na prática!
 
+-   Importar muitos arquivos: na prática!
 
 ## Conhecendo a base de dados
 
@@ -250,7 +239,6 @@ adicionar_arte_horst("dplyr_mutate")
 adicionar_arte_horst("parse_number")
 ```
 
-
 ## Aplicar uma transformação em várias variáveis de uma vez
 
 ```{r}
@@ -267,27 +255,21 @@ adicionar_arte_horst("dplyr_across")
 adicionar_arte_horst("dplyr_case_when")
 ```
 
-
-
 ## Transformar formato da base
 
 ![](images/original-dfs-tidy.png){fig-align="center"}
 
 ::: footer
-Fonte:  [Garrick Aden-Buie (@grrrck) - Tidy Animated Verbs](https://github.com/gadenbuie/tidyexplain)
+Fonte: [Garrick Aden-Buie (\@grrrck) - Tidy Animated Verbs](https://github.com/gadenbuie/tidyexplain)
 :::
-
 
 ## Transformar formato da base
 
 ![](https://github.com/gadenbuie/tidyexplain/raw/main/images/tidyr-pivoting.gif){fig-align="center"}
 
 ::: footer
-Fonte:  [Garrick Aden-Buie (@grrrck) - Tidy Animated Verbs](https://github.com/gadenbuie/tidyexplain)
+Fonte: [Garrick Aden-Buie (\@grrrck) - Tidy Animated Verbs](https://github.com/gadenbuie/tidyexplain)
 :::
-
-
-
 
 ## Melhorar a estrutura do resultado de um modelo
 
@@ -297,5 +279,7 @@ Fonte:  [Garrick Aden-Buie (@grrrck) - Tidy Animated Verbs](https://github.com/g
 adicionar_arte_horst("broom_package")
 ```
 
-
 ## Onde aprender mais...
+
+-   <https://curso-r.github.io/zen-do-r/>
+
