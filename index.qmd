@@ -54,7 +54,18 @@ knitr:
 
 ::: columns
 ::: {.column width="60%"}
-...
+-   Contato
+
+    -   Email: terezalacer\@gmail.com
+
+    -   Blog: [terezalacerda.com](https://terezalacerda.com)
+
+-   Sobre mim
+
+    -   Formada em Estatística pelo IME/USP
+
+    -   Cientista de Dados/Programadora na [Curso-R](https://curso-r.com/)
+
 :::
 
 ::: {.column width="40%"}
