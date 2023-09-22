@@ -12,6 +12,8 @@ format:
     show-slide-number: all
     hash-type: number
     preview-links: false
+title-slide-attributes: 
+  data-background-color: "#FFFFFF"
 knitr:
   opts_chunk: 
     message: false
